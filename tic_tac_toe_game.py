@@ -44,10 +44,10 @@ def play_game():
         print_board(board)
 
         if check_winner(board, current_player):
-            print(f"🎉 Player {current_player} wins!")
+            print(f"Player {current_player} wins!")
             break
         if is_draw(board):
-            print("🤝 It's a draw!")
+            print("It's a draw!")
             break
 
         current_player = 'O' if current_player == 'X' else 'X'
